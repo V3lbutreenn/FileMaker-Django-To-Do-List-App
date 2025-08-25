@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapılacaklar Listesi</title>
+
+    {% load static %}  <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head>
+
+<body>
+
+    <div class="app-container">
+        <h1>Yapılacaklar Listem</h1>
+
+        <div class="add-task-area">
+            <input type="text" id="new-task-input" placeholder="Yeni bir görev ekle...">
+            <button id="add-task-btn">Ekle</button>
+        </div>
+
+        <div class="controls-area">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="uncompleted">Yapılacaklar</button>
+                <button class="filter-btn" data-filter="completed">Tamamlananlar</button>
+            </div>
+            <div class="info">
+                <span id="task-count">0 görev kaldı</span>
+                <button id="clear-completed-btn">Tamamlananları Temizle</button>
+            </div>
+        </div>
+
+        <ul id="task-list">
+            </ul>
+    </div>
+
+    <script src="static/js/app.js"></script>
+</body>
+</html>
