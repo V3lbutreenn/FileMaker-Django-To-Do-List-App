@@ -39,7 +39,7 @@ To run this project locally, the following requirements must be met.
     * The `.fmp12` file must remain open for the project to run.  
 
 3. **Check Connection Settings:**  
-    * Open the **`utils.py`** file.  
+    * Open the **`views.py`** file.  
     * Ensure that the `FM_DSN_NAME`, `FM_USERNAME`, and `FM_PASSWORD` variables match your DSN configuration and the `todolistuser` credentials.  
 
 4. **Start the Django Server:**  
